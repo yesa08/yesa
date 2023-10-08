@@ -1,47 +1,68 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>YESA VIOLA</title>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width">
-    </head>
-    <body>
-        <h1 class="judul">😀 Portofolio 😀</h1>
-        <img class="gambar" src="yesa.jpg" />
-        <p class="deskripsi">Saya <b>YESA VIOLA</b> mahasiswa <i>Teknik Informatika</i> di <u>Institut Teknologi Sumatera</u></p>
-        <h2>Biodata</h2>
-        <div class="panel">
-            <table class="tabel-biodata" border="1">
-                <tr>
-                    <td>🖐Nama</td>
-                    <td>YESA VIOLA</td>
-                </tr>
-                <tr>
-                    <td>✒️ NIM</td>
-                    <td>122140133</td>
-                </tr>
-                <tr>
-                    <td>🙍‍♂️ Jenis Kelamin</td>
-                    <td>Perempuan</td>
-                </tr>
-                <tr>
-                    <td>📅 Umur</td>
-                    <td>19 Tahun</td>
-                </tr>
-            </table>
-        </div>
-        <h2>Pendidikan</h2>
-        <div class="panel">
-            <ol>
-                <li>Institut Teknologi Sumatera</li>
-                <li>SMA Negeri 1 KOTAAGUNG</li>
-                <li>SMP Negeri 1 KOTAAGUNG</li>
-            </ol>
-        </div>
-        <h2>Kontak</h2>
-        <div class="panel">
-            <a href="https://wa.me/+6281366097200">📱 Whatsapp</a>
-            <a href="https://instagram.com/yesa_viola">📷 Instagram</a>
-        </div>
-    </body>
-</html>
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.judul {
+    color: red;
+}
+
+.gambar {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.deskripsi {
+    font-size: 20px;
+}
+
+.panel {
+    color: gray;
+    background-color: rgb(240, 251, 255);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.tabel-biodata {
+    border-color: rgb(128, 128, 128);
+    border-collapse: collapse;   
+}
+
+td {
+    padding: 5px;
+}
+
+h2 {
+    color: rgb(43, 226, 101);
+}
+
+ol {
+    list-style: upper-roman;
+    text-align: left;
+}
+
+a {
+    color: rgb(43, 226, 144);
+    text-decoration: none;
+}
+
+a::before {
+    content: " - ";
+}
+
+a::after {
+    content: " - ";
+}
+
+a:hover {
+    color: rgb(255, 153, 0);
+    font-size: 20px;
+    transition-duration: 1s;
+}
